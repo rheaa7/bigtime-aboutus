@@ -7,6 +7,17 @@ body {
 	padding-top: 275px;
 }
 
+#about p, #where p, #brewers p, #thebrewery p, #contact-info > p {
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+}
+
+#contact-info > p {
+	font-weight: bold;
+	font-size: 125%;
+}
+
 .nav-bar {
 	height: 50px;
 	margin-bottom: -50px;
@@ -156,8 +167,13 @@ li, li > p {
 	background-color: #3B5998;
 }
 
+#google {
+	margin-left: 105px;
+}
+
+
 /* Icons */
-.icon-button i {
+.icon-button i, #google {
 	background: none;
 	color: white;
 	height: 3.6rem;
@@ -198,20 +214,27 @@ hr {
 h1, h2 {
   padding-bottom: 10px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
  
 }
 
 #sidebar {
-  float: right; 
-  
-  height: 0px;
+  float: right;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 50px;
 
 
 }
 
+
+
 #map {
-  
+  clear: both;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 #about {
@@ -225,20 +248,10 @@ h1, h2 {
     background-color: #B19271;
     padding: 15px;
     opacity: 0.9;
-    
-
-  
 }
 
-
-.brewer1-img {
-  float: right;
-  margin: 10px;
-
-}
 
 #where {
-  
   display: block;
   position: relative;
   margin: 0 auto;
@@ -250,23 +263,110 @@ h1, h2 {
 
 }
 
+#where p, #where h3 {
+	margin-left: 50px;
+	width: 250px;
+	margin-top: 0px;
+}
+
 #brewers {
   
   display: block;
   position: relative;
   margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  padding: 15px;
+  background-color: #B19271;
+  opacity: 0.9;
+
+}
+
+#img-right {
+	display:inline-block;
+	vertical-align: top;
+	margin-right: 70px;
+	margin-bottom: 20px;
+
+}
+
+
+#img-left {
+	display:inline-block;
+	vertical-align: top;
+		margin-bottom: 20px;
+
+}
+
+
+
+#thebrewery {
+	display: block;
+  	position: relative;
+  	margin: 0 auto;
     text-align: left;
     width: 800px;
+    background-color: #DEB887;
     padding: 15px;
-    background-color: #B19271;
     opacity: 0.9;
+
 }
 
-.brewer2-img {
-  float: left;
-  margin: 10px;
-  clear: right;
-  padding-right: 10px;
+.breweryimg {
+	margin-right: 30px;
+	margin-left: 20px;
 }
 
+
+@media screen and (max-width: 750px) {
+
+	.container-fluid {
+		width: 100%;
+		padding: 0px;
+
+	}
+	#about, #where, #brewers, #thebrewery {
+		width: 100%;
+
+	}
+
+	#info, #sidebar, .side widget-area {
+		margin:auto;
+		width: 100%;
+
+	}
+
+	.nav-bar {
+		height: 100px;
+
+
+	}
+
+	h2 {
+		margin-top: 50px;
+	}
+
+	#contact-info > p {
+		display: none;
+	}
+
+	#map {
+		display: none;
+	}
+
+	.breweryimg {
+		margin-bottom:20px;
+		margin-right: 20px;
+	
+	}
+
+	#allimgs {
+		text-align: center;
+	}
+
+	#img-right {
+		margin-right: 0px;
+	}
+
+}
 

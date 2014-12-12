@@ -46,5 +46,16 @@ $( document ).ready(function() {
           map.setZoom(17);
           map.setCenter(marker.getPosition());
         });
+
+        var mn = $(".nav-bar");
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 275) {
+        mn.addClass("main-nav-scrolled");
+        $("header").fadeOut();
+    } else {
+        mn.removeClass("main-nav-scrolled");
+        $("header").fadeIn();
+    }
+  })
     
 }); //DOM

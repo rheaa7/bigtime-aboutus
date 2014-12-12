@@ -17,5 +17,17 @@ $( document ).ready(function() {
         $("#map").height( (Number($(this).height())) - ($('#map').position().top) - 20); 
 
     });
+
+var mn = $(".nav-bar");
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 275) {
+        mn.addClass("main-nav-scrolled");
+        $("header").fadeOut();
+    } else {
+        mn.removeClass("main-nav-scrolled");
+        $("header").fadeIn();
+    }
+  })
     
 }); //DOM
+
